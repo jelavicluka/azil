@@ -68,3 +68,28 @@ input.apple-switch:checked:after {
   left: 20px;
   box-shadow: -2px 4px 3px rgba(0, 0, 0, 0.05);
 }
+
+h1 {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding-top: 2.5rem;
+  color: #ffffff;
+}
+
+p {
+  padding: 0 10rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slideshow-container {
+  padding: 0 5rem;
+}
+
+.map-container {
+  position: relative !important;
+  height: 350px !important;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
