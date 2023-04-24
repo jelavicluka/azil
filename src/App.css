@@ -77,19 +77,21 @@ h1 {
   color: #ffffff;
 }
 
-p {
+.opcenito p {
   padding: 0 10rem;
   color: rgba(255, 255, 255, 0.7);
+  text-align: center;
 }
 
 .slideshow-container {
   padding: 0 5rem;
+  flex: 1;
 }
 
 .map-container {
   position: relative !important;
   height: 350px !important;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 3rem 0;
 }

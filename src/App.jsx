@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Opcenito from "./components/Opcenito";
 import Donacije from "./components/Donacije";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/donacije" element={<Donacije />}></Route>
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }
