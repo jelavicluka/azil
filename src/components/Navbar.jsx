@@ -17,9 +17,7 @@ function Navbar({ admin, setAdmin }) {
         <ul>
           <li>
             <NavLink
-              style={({ isActive }) => ({
-                color: isActive ? "#646cff" : "white",
-              })}
+              className={({ isActive }) => (isActive ? "active" : "pending")}
               to="/"
             >
               O nama
@@ -27,9 +25,7 @@ function Navbar({ admin, setAdmin }) {
           </li>
           <li>
             <NavLink
-              style={({ isActive }) => ({
-                color: isActive ? "#646cff" : "white",
-              })}
+              className={({ isActive }) => (isActive ? "active" : "pending")}
               to="/popis"
             >
               Popis
@@ -37,9 +33,7 @@ function Navbar({ admin, setAdmin }) {
           </li>
           <li>
             <NavLink
-              style={({ isActive }) => ({
-                color: isActive ? "#646cff" : "white",
-              })}
+              className={({ isActive }) => (isActive ? "active" : "pending")}
               to="/donacije"
             >
               Donacije
@@ -47,9 +41,7 @@ function Navbar({ admin, setAdmin }) {
           </li>
           <li>
             <NavLink
-              style={({ isActive }) => ({
-                color: isActive ? "#646cff" : "white",
-              })}
+              className={({ isActive }) => (isActive ? "active" : "pending")}
               to="/obavjesti"
             >
               Obavijesti
