@@ -1,5 +1,5 @@
 import "../App.css";
-import Switch from "react-ios-switch";
+import { NavLink } from "react-router-dom";
 
 function Navbar({ admin, setAdmin }) {
   function toggleAdmin() {
@@ -9,23 +9,51 @@ function Navbar({ admin, setAdmin }) {
   return (
     <div className="navbar">
       <div>
-        <a href="/" className="navbar-title">
+        <NavLink to="/" className="navbar-title">
           Azil
-        </a>
+        </NavLink>
       </div>
       <div className="options-container">
         <ul>
           <li>
-            <a href="/opcenito">O nama</a>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#646cff" : "white",
+              })}
+              to="/"
+            >
+              O nama
+            </NavLink>
           </li>
           <li>
-            <a href="/popis">Popis</a>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#646cff" : "white",
+              })}
+              to="/popis"
+            >
+              Popis
+            </NavLink>
           </li>
           <li>
-            <a href="/donacije">Donacije</a>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#646cff" : "white",
+              })}
+              to="/donacije"
+            >
+              Donacije
+            </NavLink>
           </li>
           <li>
-            <a href="/obavjesti">Obavijesti</a>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#646cff" : "white",
+              })}
+              to="/obavjesti"
+            >
+              Obavijesti
+            </NavLink>
           </li>
         </ul>
       </div>

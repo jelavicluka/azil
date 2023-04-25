@@ -14,7 +14,7 @@ function App() {
       <Navbar admin={admin} setAdmin={setAdmin} />
       <div>
         <Routes>
-          <Route path="/opcenito" element={<Opcenito />}></Route>
+          <Route path={"/"} element={<Opcenito />}></Route>
           <Route path="/donacije" element={<Donacije />}></Route>
         </Routes>
       </div>
