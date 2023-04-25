@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 
 function Karta() {
   const { isLoaded } = useLoadScript({
@@ -15,7 +15,7 @@ function Map() {
 
   return (
     <GoogleMap zoom={10} center={center} mapContainerClassName="map-container">
-      <Marker position={{ lat: 43.51382, lng: 16.50268 }} />
+      <MarkerF position={{ lat: 43.51382, lng: 16.50268 }} />
     </GoogleMap>
   );
 }

@@ -60,7 +60,7 @@ function Navbar({ admin, setAdmin }) {
       <div>
         <a className="admin">Admin</a>
         <input
-          class="apple-switch"
+          className="apple-switch"
           type="checkbox"
           onClick={toggleAdmin}
         ></input>
