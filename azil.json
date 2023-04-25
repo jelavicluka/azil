@@ -58,6 +58,36 @@
       "opis": "Više od običnog psa",
       "pregled": "2000-02-13",
       "udomljen": false
+    },
+    {
+      "id": 3,
+      "ime": "Rex",
+      "vrsta": "pas",
+      "cip": false,
+      "godine": 12,
+      "opis": "Voli puno jesti",
+      "pregled": "2022-09-23",
+      "udomljen": true
+    },
+    {
+      "id": 4,
+      "ime": "Tyson",
+      "vrsta": "pas",
+      "cip": true,
+      "godine": 3,
+      "opis": "Voli svoju bebu najvise na svijetu",
+      "pregled": "2022-09-23",
+      "udomljen": true
+    },
+    {
+      "id": 5,
+      "ime": "Maci",
+      "vrsta": "mačka",
+      "cip": false,
+      "godine": 2,
+      "opis": "Voli se maziti",
+      "pregled": "2022-09-23",
+      "udomljen": true
     }
   ],
   "poruke": [
