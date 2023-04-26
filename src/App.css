@@ -148,3 +148,34 @@ h1 {
   border-radius: 3px;
   padding: 0.5rem 0;
 }
+
+.inputs-container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: fit-content;
+  padding-left: 10px;
+}
+
+.input-heading {
+  color: white;
+  padding-top: 10px;
+  font-size: 19px;
+}
+.filter-heading {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 7px;
+  color: rgba(47, 57, 78, 1);
+}
+
+.all-filters-container {
+  background-color: rgb(47, 57, 78);
+  width: 100%;
+  justify-content: center;
+  display: inline-flex;
+  padding: 1rem 1rem;
+  background-color: rgb(47, 57, 78);
+}
