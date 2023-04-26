@@ -7,6 +7,7 @@ function Opcenito() {
     <div className="opcenito">
       <Reveal>
         <h1>Informacije o skloništu</h1>
+        <div className="line"></div>
         <p>
           Sklonište za nezbrinute životinje Grada Splita postoji od siječnja
           2001. godine. Smješteno je na istočnom rubu grada.
@@ -27,6 +28,7 @@ function Opcenito() {
           <Slideshow />
         </div>
         <h1>Služba za zbrinjavanje životinja</h1>
+        <div className="line"></div>
         <p>
           Početkom travnja 2009. godine dobili smo novu ekipu u Skloništu i od
           tada je pa do kraja 2015. godine kroz njihove ruke prošlo na tisuće
@@ -43,6 +45,7 @@ function Opcenito() {
           i različitih vrsta kornjača.
         </p>
         <h1>Kako do nas?</h1>
+        <div className="line"></div>
         <div className="map-container">
           <Karta />
         </div>

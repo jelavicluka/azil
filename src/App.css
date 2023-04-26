@@ -138,3 +138,13 @@ h1 {
   padding: 1rem 1rem;
   margin: 0 auto;
 }
+
+.line {
+  display: flex;
+  width: 70px;
+  height: 10px;
+  border-bottom: 3px solid rgb(47, 57, 78);
+  margin: auto;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+}
