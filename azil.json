@@ -88,6 +88,36 @@
       "opis": "Voli se maziti",
       "pregled": "2022-09-23",
       "udomljen": true
+    },
+    {
+      "id": 6,
+      "ime": "Ringo",
+      "vrsta": "pas",
+      "cip": true,
+      "godine": 13,
+      "opis": "Voli kratke šetnje i ležanje po cijele dane. Ps obožava hranu!",
+      "pregled": "2022-09-23",
+      "udomljen": true
+    },
+    {
+      "id": 7,
+      "ime": "Bubi",
+      "vrsta": "pas",
+      "cip": true,
+      "godine": 3,
+      "opis": "Bubi ne voli druge pse!!!",
+      "pregled": "2022-09-23",
+      "udomljen": false
+    },
+    {
+      "id": 8,
+      "ime": "Lulu",
+      "vrsta": "mačka",
+      "cip": false,
+      "godine": 2,
+      "opis": "Lulu više od ičeg voli spavati.",
+      "pregled": "2022-09-23",
+      "udomljen": false
     }
   ],
   "poruke": [
