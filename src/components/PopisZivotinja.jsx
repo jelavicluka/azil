@@ -4,6 +4,7 @@ import "../App.css";
 import { Reveal } from "react-reveal";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import TextField from "@mui/material/TextField";
 import { Box } from "@mui/system";
 
 function PopisZivotinja({ zivotinje, postaviZivotinje }) {
@@ -26,14 +27,65 @@ function PopisZivotinja({ zivotinje, postaviZivotinje }) {
           .then((zivotinje) => postaviZivotinje(zivotinje.data));
   }
 
+  async function traziZivotinje(e) {
+    e.preventDefault();
+
+    e.target.value === ""
+      ? await axios
+          .get(`http://localhost:3001/zivotinje`)
+          .then((zivotinje) => postaviZivotinje(zivotinje.data))
+      : await axios
+          .get(`http://localhost:3001/zivotinje/?ime=${e.target.value}`)
+          .then((zivotinje) => postaviZivotinje(zivotinje.data));
+  }
+
   return (
     <div>
       <Reveal>
-        <h1>Popis Životinja</h1>
+        <h1>Popis životinja</h1>
         <div className="popis-grid-container">
           <div className="item-filters">
             <h2 className="filter-heading">Filteri</h2>
             <div>
+              <form
+                style={{ display: "inline-flex" }}
+                onSubmit={traziZivotinje}
+              >
+                <TextField
+                  id="outlined-basic"
+                  label="Traži po imenu"
+                  variant="outlined"
+                  onChange={traziZivotinje}
+                  size="small"
+                  InputLabelProps={{
+                    style: {
+                      color: "#fff",
+                    },
+                  }}
+                  sx={{
+                    input: { color: "white" },
+                    "& label.Mui-focused": {
+                      color: "white",
+                    },
+                    "& .MuiInput-underline:after": {
+                      borderBottomColor: "white",
+                    },
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        borderColor: "white",
+                      },
+                      "&:hover fieldset": {
+                        borderColor: "white",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "white",
+                      },
+                    },
+                    width: "12.8rem",
+                    paddingLeft: "5px",
+                  }}
+                />
+              </form>
               <div className="inputs-container">
                 <div className="input-heading">Vrsta:</div>
                 <div className="input-container">

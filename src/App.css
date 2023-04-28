@@ -82,7 +82,7 @@ h1 {
   margin: auto;
   width: 50%;
   text-align: center;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   color: rgba(47, 57, 78, 1);
 }
 
@@ -162,6 +162,7 @@ h1 {
   padding-top: 10px;
   font-size: 19px;
 }
+
 .filter-heading {
   margin: auto;
   width: 50%;
@@ -171,20 +172,13 @@ h1 {
   color: white;
 }
 
-.all-filters-container {
-  background-color: rgb(47, 57, 78);
-  width: 100%;
-  justify-content: center;
-  display: inline-flex;
-  padding: 1rem 1rem;
-  background-color: rgb(47, 57, 78);
-}
-
 .item-filters {
   grid-area: filter;
   background-color: rgb(47, 57, 78);
-  width: 11.5rem;
+  width: 13.5rem;
+  padding: 15px 0px;
 }
+
 .item-cards {
   grid-area: card;
 }
