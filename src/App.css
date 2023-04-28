@@ -168,7 +168,7 @@ h1 {
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 7px;
-  color: rgba(47, 57, 78, 1);
+  color: white;
 }
 
 .all-filters-container {
@@ -178,4 +178,20 @@ h1 {
   display: inline-flex;
   padding: 1rem 1rem;
   background-color: rgb(47, 57, 78);
+}
+
+.item-filters {
+  grid-area: filter;
+  background-color: rgb(47, 57, 78);
+  width: 11.5rem;
+}
+.item-cards {
+  grid-area: card;
+}
+
+.popis-grid-container {
+  display: grid;
+  grid-template-areas: "filter card card card";
+  gap: 10px;
+  padding-top: 1.5rem;
 }
