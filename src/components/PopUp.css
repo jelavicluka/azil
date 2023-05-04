@@ -35,6 +35,44 @@ body.active-modal {
   border-radius: 3px;
   max-width: 600px;
   min-width: 300px;
+  background-color: rgb(47, 57, 78);
+  color: white;
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.8em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: rgb(92, 170, 113);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+
+#close-button {
+  margin: 0 auto;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.8em;
+  font-weight: 350;
+  font-family: inherit;
+  background-color: rgb(255, 96, 92);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+
+button:hover {
+  border-color: rgb(38, 80, 49);
 }
 
 .close-modal {

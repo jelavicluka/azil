@@ -6,14 +6,26 @@ import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import TextField from "@mui/material/TextField";
 import { Box } from "@mui/system";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PopUp from "./PopUp";
 
 function PopisZivotinja({ zivotinje, postaviZivotinje }) {
   const [modal, setModal] = useState(false);
+  const [cardZivotinja, setCardZivotinja] = useState({});
 
-  const toggleModal = () => {
-    setModal(!modal);
+  const toggleModal = (e) => {
+    if (!modal) {
+      getOneCard(e);
+    } else {
+      setModal(!modal);
+    }
+  };
+
+  const getOneCard = async (id) => {
+    await axios
+      .get(`http://localhost:3001/zivotinje/?id=${id}`)
+      .then((cardZivotinja) => setCardZivotinja(cardZivotinja.data))
+      .then(() => setModal(!modal));
   };
 
   async function filtrirajVrste(e) {
@@ -49,9 +61,11 @@ function PopisZivotinja({ zivotinje, postaviZivotinje }) {
 
   return (
     <div>
-      <div>
-        <PopUp modal={modal} toggleModal={toggleModal} />
-      </div>
+      <PopUp
+        modal={modal}
+        toggleModal={toggleModal}
+        cardZivotinja={cardZivotinja}
+      />
       <Reveal>
         <h1>Popis životinja</h1>
         <div className="popis-grid-container">
@@ -258,8 +272,12 @@ function PopisZivotinja({ zivotinje, postaviZivotinje }) {
           <div className="item-cards">
             <div className="card-container">
               {zivotinje.map((r) => (
-                <div className="card" onClick={toggleModal}>
-                  <AnimalCard key={r.id} zivotinja={r} />
+                <div className="card">
+                  <AnimalCard
+                    key={r.id}
+                    zivotinja={r}
+                    toggleModal={toggleModal}
+                  />
                 </div>
               ))}
             </div>

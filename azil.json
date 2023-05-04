@@ -57,7 +57,7 @@
       "godine": 50,
       "opis": "Više od običnog psa",
       "pregled": "2000-02-13",
-      "udomljen": false
+      "udomljen": true
     },
     {
       "id": 3,
@@ -67,7 +67,7 @@
       "godine": 12,
       "opis": "Voli puno jesti",
       "pregled": "2022-09-23",
-      "udomljen": true
+      "udomljen": false
     },
     {
       "id": 4,
@@ -87,7 +87,7 @@
       "godine": 2,
       "opis": "Voli se maziti",
       "pregled": "2022-09-23",
-      "udomljen": true
+      "udomljen": false
     },
     {
       "id": 6,

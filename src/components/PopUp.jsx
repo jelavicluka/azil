@@ -1,11 +1,18 @@
 import "./PopUp.css";
+import axios from "axios";
 
-function PopUp({ modal, toggleModal }) {
+function PopUp({ modal, toggleModal, cardZivotinja }) {
   if (modal) {
     document.body.classList.add("active-modal");
   } else {
     document.body.classList.remove("active-modal");
   }
+
+  const udomljavanje = async (id) => {
+    await axios
+      .patch(`http://localhost:3001/zivotinje/${id}`, { udomljen: true })
+      .then(toggleModal);
+  };
 
   return (
     <div>
@@ -13,15 +20,25 @@ function PopUp({ modal, toggleModal }) {
         <div className="modal">
           <div className="overlay">
             <div className="modal-content">
-              <h2>Hello modal!</h2>
+              <p>Ime: {cardZivotinja[0].ime}</p>
+              <p>Vrsta: {cardZivotinja[0].vrsta}</p>
               <p>
-                Modal modal modal modal modal Modal modal modal modal modal
-                Modal modal modal modal modal Modal modal modal modal modal
-                Modal modal modal modal modal Modal modal modal modal modal
+                Status:{" "}
+                {cardZivotinja[0].udomljen ? "udomljen" : "nije udomljen"}
               </p>
-              <button className="close-modal" onClick={toggleModal}>
-                CLOSE
+              <p>Opis: {cardZivotinja[0].opis}</p>
+              <button
+                className="close-modal"
+                id="close-button"
+                onClick={toggleModal}
+              >
+                Zatvori
               </button>
+              {!cardZivotinja[0].udomljen && (
+                <button onClick={() => udomljavanje(cardZivotinja[0].id)}>
+                  Udomi
+                </button>
+              )}
             </div>
           </div>
         </div>
