@@ -24,7 +24,8 @@ function AnimalCard({ zivotinja, toggleModal }) {
         component="img"
         alt="green iguana"
         height="140"
-        image="https://ip.index.hr/remote/bucket.index.hr/b/index/images2/Iguana_naslovna_akvarij.jpg"
+        width="300"
+        image={`public/foto${zivotinja.id}.jpg`}
       />
       <CardContent>
         <div>
