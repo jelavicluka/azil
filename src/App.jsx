@@ -30,6 +30,7 @@ function App() {
               <PopisZivotinja
                 zivotinje={zivotinje}
                 postaviZivotinje={postaviZivotinje}
+                admin={admin}
               />
             }
           ></Route>

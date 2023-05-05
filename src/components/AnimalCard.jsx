@@ -4,6 +4,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import "../App.css";
 
 function AnimalCard({ zivotinja, toggleModal }) {
   const posaljiPodatke = (e) => {
@@ -26,6 +27,13 @@ function AnimalCard({ zivotinja, toggleModal }) {
         image="https://ip.index.hr/remote/bucket.index.hr/b/index/images2/Iguana_naslovna_akvarij.jpg"
       />
       <CardContent>
+        <div>
+          {zivotinja.udomljen ? (
+            <span className="red-dot"></span>
+          ) : (
+            <span className="green-dot"></span>
+          )}
+        </div>
         <Typography gutterBottom variant="h5" component="div">
           {zivotinja.vrsta === "pas" ? "Pas " : "Mačka "}
           {zivotinja.ime}

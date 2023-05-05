@@ -24,3 +24,7 @@
   width: 13.1rem;
   height: 5rem;
 }
+
+#footer-button {
+  display: inline;
+}

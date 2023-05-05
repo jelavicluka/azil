@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import TextField from "@mui/material/TextField";
 import "./Footer.css";
 
 function Footer() {
@@ -61,7 +60,9 @@ function Footer() {
               />
             </div>
             <div className="button-container">
-              <button type="submit">Pošalji</button>
+              <button type="submit" id="footer-button">
+                Pošalji
+              </button>
             </div>
           </form>
         </div>

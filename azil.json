@@ -57,7 +57,7 @@
       "godine": 50,
       "opis": "Više od običnog psa",
       "pregled": "2000-02-13",
-      "udomljen": true
+      "udomljen": false
     },
     {
       "id": 3,
@@ -67,7 +67,7 @@
       "godine": 12,
       "opis": "Voli puno jesti",
       "pregled": "2022-09-23",
-      "udomljen": false
+      "udomljen": true
     },
     {
       "id": 4,
@@ -81,13 +81,13 @@
     },
     {
       "id": 5,
-      "ime": "Maci",
+      "ime": "Dona",
       "vrsta": "mačka",
       "cip": false,
       "godine": 2,
       "opis": "Voli se maziti",
       "pregled": "2022-09-23",
-      "udomljen": false
+      "udomljen": true
     },
     {
       "id": 6,
@@ -95,9 +95,9 @@
       "vrsta": "pas",
       "cip": true,
       "godine": 13,
-      "opis": "Voli kratke šetnje i ležanje po cijele dane. Ps obožava hranu!",
+      "opis": "Obožava hranu",
       "pregled": "2022-09-23",
-      "udomljen": true
+      "udomljen": false
     },
     {
       "id": 7,
@@ -105,7 +105,7 @@
       "vrsta": "pas",
       "cip": true,
       "godine": 3,
-      "opis": "Bubi ne voli druge pse!!!",
+      "opis": "Bubi ne voli druge pse",
       "pregled": "2022-09-23",
       "udomljen": false
     },
@@ -145,6 +145,11 @@
       "email": "lukajelavi@gmail.com",
       "poruka": "Sara je najbolja.",
       "id": 5
+    },
+    {
+      "email": "lukajelavi@gmail.com",
+      "poruka": "Pozz",
+      "id": 6
     }
   ]
 }

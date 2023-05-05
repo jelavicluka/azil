@@ -6,10 +6,10 @@ import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import TextField from "@mui/material/TextField";
 import { Box } from "@mui/system";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import PopUp from "./PopUp";
 
-function PopisZivotinja({ zivotinje, postaviZivotinje }) {
+function PopisZivotinja({ zivotinje, postaviZivotinje, admin }) {
   const [modal, setModal] = useState(false);
   const [cardZivotinja, setCardZivotinja] = useState({});
 
@@ -17,8 +17,15 @@ function PopisZivotinja({ zivotinje, postaviZivotinje }) {
     if (!modal) {
       getOneCard(e);
     } else {
-      setModal(!modal);
+      closeCard();
     }
+  };
+
+  const closeCard = async () => {
+    await axios
+      .get(`http://localhost:3001/zivotinje`)
+      .then((res) => postaviZivotinje(res.data))
+      .then(() => setModal(!modal));
   };
 
   const getOneCard = async (id) => {
@@ -65,6 +72,7 @@ function PopisZivotinja({ zivotinje, postaviZivotinje }) {
         modal={modal}
         toggleModal={toggleModal}
         cardZivotinja={cardZivotinja}
+        admin={admin}
       />
       <Reveal>
         <h1>Popis životinja</h1>

@@ -189,3 +189,19 @@ h1 {
   gap: 10px;
   padding-top: 1.5rem;
 }
+
+.red-dot {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 96, 92);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.green-dot {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(0, 202, 78);
+  border-radius: 50%;
+  display: inline-block;
+}
