@@ -47,6 +47,7 @@ function Unos() {
       opis: data.Opis,
       cip: Boolean(data.Cip),
       udomljen: false,
+      pregled: data.Pregled,
     };
   }
 
