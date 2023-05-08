@@ -1,20 +1,24 @@
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useState } from "react";
 import axios from "axios";
 import * as yup from "yup";
 import "./Unos.css";
 
-function Unos({ postaviZivotinje }) {
+function Unos() {
   const schema = yup
     .object({
-      Vrsta: yup.string().required("Molim odaberite vrstu"),
+      Vrsta: yup.string().required("Odaberite vrstu"),
       Ime: yup
         .string()
-        .required("Molim unesite ime")
+        .required("Unesite ime")
         .min(2, "Ime mora sadržavati barem 2 znaka"),
-      Godine: yup.number().required("Molim unesite godinu"),
-      Opis: yup.string().required("Molim opišite životinju"),
+      Godine: yup
+        .number()
+        .integer()
+        .required("Unesite godinu")
+        .min(1, "Unesite broj godina veći od 0")
+        .typeError("Unesite broj godina"),
+      Opis: yup.string().required("Opišite životinju"),
       Udomljen: yup.boolean(),
       Cip: yup.boolean(),
     })
@@ -22,6 +26,7 @@ function Unos({ postaviZivotinje }) {
 
   const {
     register,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm({
@@ -29,6 +34,9 @@ function Unos({ postaviZivotinje }) {
     defaultValues: {
       Cip: false,
       Vrsta: "",
+      Ime: "",
+      Opis: "",
+      Godine: 0,
     },
   });
 
@@ -64,6 +72,7 @@ function Unos({ postaviZivotinje }) {
           <form
             onSubmit={handleSubmit((data) => {
               spremiPodatke(data);
+              reset();
             })}
           >
             <div className="text-inputi">
@@ -159,12 +168,11 @@ function Unos({ postaviZivotinje }) {
                     Ostalo
                   </label>
                 </div>
+                {errors["Vrsta"]?.message && (
+                  <p id="errorMessage">{errors["Vrsta"]?.message}</p>
+                )}
               </fieldset>
             </div>
-
-            {errors["Vrsta"]?.message && (
-              <p id="errorMessage">{errors["Vrsta"]?.message}</p>
-            )}
 
             <div id="inputDiv">
               <div id="radioButtonDiv">

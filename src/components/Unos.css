@@ -69,7 +69,7 @@ legend {
 }
 
 #errorMessage {
-  margin: 0;
+  margin: 0 auto;
   font-size: smaller;
 }
 

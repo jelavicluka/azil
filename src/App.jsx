@@ -36,10 +36,7 @@ function App() {
             }
           ></Route>
           <Route path="/donacije" element={<Donacije />}></Route>
-          <Route
-            path="/unos"
-            element={<Unos postaviZivotinje={postaviZivotinje} />}
-          ></Route>
+          <Route path="/unos" element={<Unos />}></Route>
         </Routes>
       </div>
       <Footer />
