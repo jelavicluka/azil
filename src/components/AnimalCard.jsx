@@ -36,7 +36,11 @@ function AnimalCard({ zivotinja, toggleModal }) {
           )}
         </div>
         <Typography gutterBottom variant="h5" component="div">
-          {zivotinja.vrsta === "pas" ? "Pas " : "Mačka "}
+          {zivotinja.vrsta === "pas"
+            ? "Pas "
+            : zivotinja.vrsta === "mačka"
+            ? "mačka "
+            : ""}
           {zivotinja.ime}
         </Typography>
         <Typography variant="body2" color="white">
