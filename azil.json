@@ -118,6 +118,14 @@
       "opis": "Lulu više od ičeg voli spavati.",
       "pregled": "2022-09-23",
       "udomljen": false
+    },
+    {
+      "ime": "Floki",
+      "vrsta": "pas",
+      "opis": "Dobar ćuko",
+      "cip": true,
+      "udomljen": false,
+      "id": 9
     }
   ],
   "poruke": [

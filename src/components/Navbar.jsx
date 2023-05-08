@@ -47,6 +47,16 @@ function Navbar({ admin, setAdmin }) {
               Obavijesti
             </NavLink>
           </li>
+          {admin && (
+            <li>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active" : "pending")}
+                to="/unos"
+              >
+                Unos
+              </NavLink>
+            </li>
+          )}
         </ul>
       </div>
       <div>

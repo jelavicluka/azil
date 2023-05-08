@@ -5,6 +5,7 @@ import Opcenito from "./components/Opcenito";
 import Donacije from "./components/Donacije";
 import Footer from "./components/Footer";
 import PopisZivotinja from "./components/PopisZivotinja";
+import Unos from "./components/Unos";
 import axios from "axios";
 import "./App.css";
 
@@ -35,6 +36,10 @@ function App() {
             }
           ></Route>
           <Route path="/donacije" element={<Donacije />}></Route>
+          <Route
+            path="/unos"
+            element={<Unos postaviZivotinje={postaviZivotinje} />}
+          ></Route>
         </Routes>
       </div>
       <Footer />

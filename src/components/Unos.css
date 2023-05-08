@@ -1,0 +1,123 @@
+.forma {
+  padding-top: 5rem;
+  margin: 0 auto;
+}
+
+#Card {
+  margin: 0 auto;
+  background-color: rgb(47, 57, 78);
+  color: white;
+  border-radius: 25px;
+  height: fit-content;
+  width: 35rem;
+}
+
+input,
+label {
+  display: inline-block;
+}
+
+label {
+  display: flex;
+  color: white;
+  font-size: larger;
+}
+
+#inputDiv {
+  width: 55%;
+  margin: auto;
+}
+
+#radioButtonDiv {
+  display: flex;
+}
+
+#radioLabel {
+  padding-left: 15px;
+}
+
+#title {
+  font-size: xx-large;
+  color: white;
+}
+
+#submitButtonDiv {
+  padding-top: 40px;
+}
+
+#radioButtonDivs {
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 51%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#radioInputDiv {
+  padding-left: 20px;
+}
+
+legend {
+  text-align: left;
+}
+
+#checkBoxDiv {
+  padding-top: 40px;
+}
+
+#errorMessage {
+  margin: 0;
+  font-size: smaller;
+}
+
+#infoDiv {
+  padding-top: 30px;
+}
+
+.text-inputi {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.text-inputi input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.text-inputi textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-box {
+  width: 13rem;
+  height: 2rem;
+}
+
+.input-box-opis {
+  width: 13rem;
+  height: 4rem;
+}
+
+.submit-button {
+  padding: 18px 0;
+}
+
+.radio-buttons {
+  padding: 15px 0;
+}
+
+.pojedinacni-input {
+  padding: 7px 0;
+}
+
+.botun {
+  font-weight: bold;
+  padding: 13px 25px;
+  font-size: large;
+}
