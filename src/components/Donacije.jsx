@@ -1,13 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import UnosDonacije from "./UnosDonacije";
 import axios from "axios";
 
 function Donacije({ admin, donacije, postaviDonacije }) {
-  const [ponovljenaDonacija, postaviPonovljenuDonaciju] = useState({
-    kategorija: "",
-    tip: "",
-    vrijednost: "",
-    opis: "",
-  });
+  const [forma, postaviFormu] = useState(false);
 
   const donirano = async (e) => {
     const id = e.target.value;
@@ -50,6 +46,20 @@ function Donacije({ admin, donacije, postaviDonacije }) {
   return (
     <div>
       <h1>Donacije</h1>
+      {forma ? (
+        <UnosDonacije
+          admin={admin}
+          postaviFormu={postaviFormu}
+          postaviDonacije={postaviDonacije}
+        ></UnosDonacije>
+      ) : (
+        <button
+          onClick={postaviFormu}
+          style={{ backgroundColor: "rgb(47, 57, 78)" }}
+        >
+          Nova donacija
+        </button>
+      )}
       <h1>Tražimo</h1>
       <table style={{ margin: "0 auto" }}>
         <thead>

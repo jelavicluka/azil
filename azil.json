@@ -50,6 +50,20 @@
       "vrijednost": 15,
       "opis": "Grebalica za mačke",
       "id": 6
+    },
+    {
+      "kategorija": "donirano",
+      "tip": "igračke",
+      "opis": "Loptica za pse",
+      "vrijednost": 2,
+      "id": 9
+    },
+    {
+      "kategorija": "trazi",
+      "tip": "ostalo",
+      "opis": "Kavez za pse",
+      "vrijednost": 50,
+      "id": 10
     }
   ],
   "zivotinje": [

@@ -49,7 +49,10 @@ function App() {
               />
             }
           ></Route>
-          <Route path="/unos" element={<Unos />}></Route>
+          <Route
+            path="/unos"
+            element={<Unos postaviZivotinje={postaviZivotinje} />}
+          ></Route>
         </Routes>
       </div>
       <Footer />

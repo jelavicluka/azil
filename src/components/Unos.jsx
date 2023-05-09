@@ -1,10 +1,10 @@
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
 import * as yup from "yup";
 import "./Unos.css";
 
-function Unos() {
+function Unos({ postaviZivotinje }) {
   const schema = yup
     .object({
       Vrsta: yup.string().required("Odaberite vrstu"),
@@ -62,6 +62,9 @@ function Unos() {
       .catch(function (error) {
         console.log(error);
       });
+
+    const rezultat = await axios.get("http://localhost:3001/zivotinje");
+    postaviZivotinje(rezultat.data);
   }
 
   return (
