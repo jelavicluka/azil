@@ -207,3 +207,11 @@ h1 {
   border-radius: 50%;
   display: inline-block;
 }
+
+.redak-tablice button {
+  background-color: rgb(47, 57, 78);
+}
+
+.redak-tablice button:hover {
+  border-color: white;
+}

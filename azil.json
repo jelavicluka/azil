@@ -25,7 +25,7 @@
     },
     {
       "id": 2,
-      "kategorija": "trazi",
+      "kategorija": "donirano",
       "tip": "Igračke",
       "vrijednost": 15,
       "opis": "Grebalica za mačke"
@@ -36,6 +36,20 @@
       "tip": "Ostalo",
       "vrijednost": 25,
       "opis": "Kavez za srednje papige"
+    },
+    {
+      "id": 4,
+      "kategorija": "trazi",
+      "tip": "Hrana",
+      "vrijednost": 25,
+      "opis": "Suha hrana za pse - 10kg"
+    },
+    {
+      "kategorija": "trazi",
+      "tip": "Igračke",
+      "vrijednost": 15,
+      "opis": "Grebalica za mačke",
+      "id": 6
     }
   ],
   "zivotinje": [

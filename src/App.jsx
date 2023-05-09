@@ -12,8 +12,12 @@ import "./App.css";
 function App() {
   const [admin, setAdmin] = useState(false);
   const [zivotinje, postaviZivotinje] = useState([]);
+  const [donacije, postaviDonacije] = useState([]);
 
   useEffect(() => {
+    axios
+      .get("http://localhost:3001/donacije")
+      .then((res) => postaviDonacije(res.data));
     axios
       .get("http://localhost:3001/zivotinje")
       .then((res) => postaviZivotinje(res.data));
@@ -35,7 +39,16 @@ function App() {
               />
             }
           ></Route>
-          <Route path="/donacije" element={<Donacije />}></Route>
+          <Route
+            path="/donacije"
+            element={
+              <Donacije
+                admin={admin}
+                donacije={donacije}
+                postaviDonacije={postaviDonacije}
+              />
+            }
+          ></Route>
           <Route path="/unos" element={<Unos />}></Route>
         </Routes>
       </div>
