@@ -64,6 +64,27 @@
       "opis": "Kavez za pse",
       "vrijednost": 50,
       "id": 10
+    },
+    {
+      "kategorija": "trazi",
+      "tip": "ostalo",
+      "opis": "Kavez za ptice",
+      "vrijednost": 50,
+      "id": 11
+    },
+    {
+      "kategorija": "nudi",
+      "tip": "igračke",
+      "opis": "Umjetna kost",
+      "vrijednost": 3,
+      "id": 12
+    },
+    {
+      "kategorija": "nudi",
+      "tip": "igračke",
+      "opis": "Frizbi",
+      "vrijednost": 2,
+      "id": 13
     }
   ],
   "zivotinje": [

@@ -215,3 +215,50 @@ h1 {
 .redak-tablice button:hover {
   border-color: white;
 }
+
+.content-table {
+  margin: 15px auto;
+  border-collapse: collapse;
+  min-width: 600px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: rgb(47, 57, 78);
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid rgb(47, 57, 78);
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: rgb(74, 138, 91);
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(47, 57, 78);
+}
+
+.nova-donacija button {
+  background-color: rgb(47, 57, 78);
+  padding: 1rem 2.5rem;
+}
+
+.nova-donacija button:hover {
+  border-color: white;
+}
+
+.nova-donacija {
+  padding-top: 15px;
+  font-size: larger;
+}
