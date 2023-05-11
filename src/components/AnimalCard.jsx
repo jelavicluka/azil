@@ -39,7 +39,7 @@ function AnimalCard({ zivotinja, toggleModal }) {
           {zivotinja.vrsta === "pas"
             ? "Pas "
             : zivotinja.vrsta === "mačka"
-            ? "mačka "
+            ? "Mačka "
             : ""}
           {zivotinja.ime}
         </Typography>

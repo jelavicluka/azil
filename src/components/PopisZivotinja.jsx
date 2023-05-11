@@ -54,6 +54,18 @@ function PopisZivotinja({ zivotinje, postaviZivotinje, admin }) {
           .then((zivotinje) => postaviZivotinje(zivotinje.data));
   }
 
+  function firstCaseUpper(word) {
+    const firstLetter = word.charAt(0);
+
+    const firstLetterCap = firstLetter.toUpperCase();
+
+    const remainingLetters = word.slice(1);
+
+    const capitalizedWord = firstLetterCap + remainingLetters;
+
+    return capitalizedWord;
+  }
+
   async function traziZivotinje(e) {
     e.preventDefault();
 
@@ -62,7 +74,11 @@ function PopisZivotinja({ zivotinje, postaviZivotinje, admin }) {
           .get(`http://localhost:3001/zivotinje`)
           .then((zivotinje) => postaviZivotinje(zivotinje.data))
       : await axios
-          .get(`http://localhost:3001/zivotinje/?ime=${e.target.value}`)
+          .get(
+            `http://localhost:3001/zivotinje/?ime=${firstCaseUpper(
+              e.target.value
+            )}`
+          )
           .then((zivotinje) => postaviZivotinje(zivotinje.data));
   }
 
