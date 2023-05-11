@@ -95,6 +95,7 @@ function UnosDonacije({ admin, postaviFormu, postaviDonacije }) {
                 <label htmlFor="Vrijednost">Vrijednost:</label>
                 <input
                   className="input-box"
+                  placeholder=" €"
                   type="number"
                   {...register("Vrijednost", {
                     required: "Molim unesite podatke",

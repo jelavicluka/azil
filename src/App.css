@@ -262,3 +262,7 @@ h1 {
   padding-top: 15px;
   font-size: larger;
 }
+
+.delete-button {
+  background-color: rgb(47, 57, 78);
+}

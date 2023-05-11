@@ -6,6 +6,7 @@ import Donacije from "./components/Donacije";
 import Footer from "./components/Footer";
 import PopisZivotinja from "./components/PopisZivotinja";
 import Unos from "./components/Unos";
+import Obavijesti from "./components/Obavijesti";
 import axios from "axios";
 import "./App.css";
 
@@ -13,6 +14,7 @@ function App() {
   const [admin, setAdmin] = useState(false);
   const [zivotinje, postaviZivotinje] = useState([]);
   const [donacije, postaviDonacije] = useState([]);
+  const [obavijesti, postaviObavijesti] = useState([]);
 
   useEffect(() => {
     axios
@@ -21,6 +23,9 @@ function App() {
     axios
       .get("http://localhost:3001/zivotinje")
       .then((res) => postaviZivotinje(res.data));
+    axios
+      .get("http://localhost:3001/obavijesti")
+      .then((res) => postaviObavijesti(res.data));
   }, []);
 
   return (
@@ -52,6 +57,16 @@ function App() {
           <Route
             path="/unos"
             element={<Unos postaviZivotinje={postaviZivotinje} />}
+          ></Route>
+          <Route
+            path="/obavijesti"
+            element={
+              <Obavijesti
+                obavijesti={obavijesti}
+                postaviObavijesti={postaviObavijesti}
+                admin={admin}
+              />
+            }
           ></Route>
         </Routes>
       </div>

@@ -25,7 +25,7 @@ function AnimalCard({ zivotinja, toggleModal }) {
         alt="green iguana"
         height="140"
         width="300"
-        image={`public/foto${zivotinja.id}.jpg`}
+        image={`/foto${zivotinja.id}.jpg`}
       />
       <CardContent>
         <div>

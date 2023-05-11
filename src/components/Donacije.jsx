@@ -74,7 +74,7 @@ function Donacije({ admin, donacije, postaviDonacije }) {
               r.kategorija === "trazi" ? (
                 <tr key={r.id} className="redak-tablice">
                   <td>{r.tip}</td>
-                  <td>{r.vrijednost}</td>
+                  <td>{r.vrijednost}€</td>
                   <td>{r.opis}</td>
                   <td>
                     {admin ? (
@@ -115,7 +115,7 @@ function Donacije({ admin, donacije, postaviDonacije }) {
               r.kategorija === "nudi" ? (
                 <tr className="redak-tablice">
                   <td>{r.tip}</td>
-                  <td>{r.vrijednost}</td>
+                  <td>{r.vrijednost}€</td>
                   <td>{r.opis}</td>
                   <td>
                     {admin && (
@@ -145,7 +145,7 @@ function Donacije({ admin, donacije, postaviDonacije }) {
               r.kategorija === "donirano" ? (
                 <tr className="redak-tablice">
                   <td>{r.tip}</td>
-                  <td>{r.vrijednost}</td>
+                  <td>{r.vrijednost}€</td>
                   <td>{r.opis}</td>
                   <td>
                     {admin && (

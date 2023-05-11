@@ -85,6 +85,13 @@
       "opis": "Frizbi",
       "vrijednost": 2,
       "id": 13
+    },
+    {
+      "kategorija": "trazi",
+      "tip": "Igračke",
+      "vrijednost": 15,
+      "opis": "Grebalica za mačke",
+      "id": 14
     }
   ],
   "zivotinje": [
@@ -106,7 +113,7 @@
       "godine": 50,
       "opis": "Više od običnog psa",
       "pregled": "2000-02-13",
-      "udomljen": false
+      "udomljen": true
     },
     {
       "id": 3,
@@ -164,7 +171,7 @@
       "vrsta": "mačka",
       "cip": false,
       "godine": 2,
-      "opis": "Lulu više od ičeg voli spavati.",
+      "opis": "Lulu više od ičeg voli spavati",
       "pregled": "2022-09-23",
       "udomljen": false
     },
@@ -207,6 +214,11 @@
       "email": "lukajelavi@gmail.com",
       "poruka": "Pozz",
       "id": 6
+    },
+    {
+      "email": "petricsara12@gmail.com",
+      "poruka": "Ej Luka :)",
+      "id": 7
     }
   ]
 }

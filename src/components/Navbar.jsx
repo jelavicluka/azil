@@ -42,7 +42,7 @@ function Navbar({ admin, setAdmin }) {
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "pending")}
-              to="/obavjesti"
+              to="/obavijesti"
             >
               Obavijesti
             </NavLink>
